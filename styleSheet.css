@@ -1,0 +1,383 @@
+/* Color Theme Swatches in Hex */
+.Lemon-1-hex { color: #A8CC44; }
+.Lemon-2-hex { color: #FBD21E; }
+.Lemon-3-hex { color: #F7E78F; }
+.Lemon-4-hex { color: #FAF4D0; }
+.Lemon-5-hex { color: #FFF8E8; }
+
+/* Color Theme Swatches in RGBA */
+.Lemon-1-rgba { color: rgba(168, 204, 68, 1); }
+.Lemon-2-rgba { color: rgba(251, 209, 29, 1); }
+.Lemon-3-rgba { color: rgba(246, 230, 142, 1); }
+.Lemon-4-rgba { color: rgba(249, 244, 207, 1); }
+.Lemon-5-rgba { color: rgba(255, 247, 232, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Lemon-1-hsla { color: hsla(75, 57, 53, 1); }
+.Lemon-2-hsla { color: hsla(48, 96, 55, 1); }
+.Lemon-3-hsla { color: hsla(50, 86, 76, 1); }
+.Lemon-4-hsla { color: hsla(51, 80, 89, 1); }
+.Lemon-5-hsla { color: hsla(41, 100, 95, 1); }
+
+/* font-family: 'Roboto', sans-serif; */
+
+
+/* General Styles */
+* {box-sizing: border-box;}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+    margin:0;
+    color:black;
+    line-height:1.5;
+}
+.bodyClass{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: justify;
+  margin:0;
+  color:black;
+  line-height:1.5;
+}
+sup,sub{
+    font-size:xx-small;
+    line-height:1;
+}
+p{
+    font-stretch: ultra-expanded;
+    /*font-size:1.2vw;*/
+}
+li{
+    padding-bottom: 15px;
+    line-height:1.2;
+}
+h2,h5{
+    text-align:left;
+    font-weight: 400;
+    /*font-size:2vw;*/
+    line-height:1
+}
+a {
+    text-decoration: underline;
+    color:#A8CC44;
+}
+ 
+.footer {
+    padding: 20px;
+    background: #F7E78F;
+}
+hr{
+    height:2px;
+    border-width:0;
+    color:black;
+    background-color:black;
+    padding-top: 5;
+    padding-bottom: 5;
+}
+
+
+
+/*DROPDOWN BUTTON*/
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #FBD21E;
+  padding-left:30px;
+  padding-right:30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-radius:30px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width:200px;
+  text-align: center;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  background-color: #F7E78F;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+  z-index: 1;
+  text-align: center;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #A8CC44}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #FBD21E;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+/* Navigation Bar */
+.navi {
+  background-color: #F7E78F;
+  overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.navi a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #A8CC44;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.navi .icon {
+  display: none;
+}
+/* Dropdown container - needed to position the dropdown content */
+.dropdownNavi {
+  float: left;
+  overflow: hidden;
+}
+/* Style the dropdown button to fit inside the topnav */
+.dropdownNavi .dropbtnNavi {
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-align: center;
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 16.5px 16px;
+}
+/* Style the dropdown content (hidden by default) */
+.dropdownNavi-content {
+  display: none;
+  position: absolute;
+  background-color: #F7E78F;
+  min-width: 160px;
+  z-index: 1;
+}
+/* Style the links inside the dropdown */
+.dropdownNavi-content a {
+  float: none;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* Add a dark background on topnav links and the dropdown button on hover */
+.navi a:hover, .dropdownNavi:hover .dropbtnNavi {
+  background-color: #FBD21E;
+}
+/* Add a grey background to dropdown links on hover */
+.dropdownNavi-content a:hover {
+  background-color: #FBD21E;
+}
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdownNavi:hover .dropdownNavi-content {
+  display: block;
+}
+/* When the screen is less than 700 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 700px) {
+  .navi a:not(:first-child), .dropdownNavi .dropbtnNavi {
+    display: none;
+  }
+  .navi a.icon {
+    float: right;
+    display: block;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 700px) {
+  .navi.responsive {position: relative;}
+  .navi.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navi.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navi.responsive .dropdownNavi {float: none;}
+  .navi.responsive .dropdownNavi-content {position: relative;}
+  .navi.responsive .dropdownNavi .dropbtnNavi {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/*Responsive Divisions*/
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+    /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 30%;
+    background-color: #FAF4D0;
+    padding: 20px;
+  }
+    /* Main column */
+  .main {
+    flex: 70%;
+    background-color:#FFF8E8;
+    padding: 20px;
+  }
+  .equalL {
+    flex: 50%;
+    background-color: #FAF4D0;
+    padding: 20px;
+  }
+    /* Main column */
+  .equalR {
+    flex: 50%;
+    background-color:#FFF8E8;
+    padding: 20px;
+  }
+  .single{
+    background-color:#FFF8E8;
+    padding: 20px;
+}
+
+   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+
+
+
+/*Table Design*/
+table{
+    border-collapse: collapse;
+    width:100%;
+}
+/*Rows*/
+tr:nth-child(even){
+    background-color: #FBD21E;
+}
+tr:nth-child(odd){
+    background-color: #F7E78F;
+}
+/*Header Cells*/
+th{
+    background-color: #A8CC44;
+    padding:10px;
+    font-size: larger;
+    font-variant: small-caps;
+}
+th.details{
+    width:60%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+th.time{
+    width:15%;
+}
+th.location{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width:15%
+}
+/*Cells*/
+td.time{
+    border-left: 5px solid #A8CC44;
+    padding: 10px;
+}
+td.location{
+    border-left: 5px solid #A8CC44;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+td.event{
+    padding-left: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+td.details{
+    padding-right:10px;
+    padding-left: 5px;
+}
+td.event,td.details,th.details{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Hide the images by default */
+.mySlides2 {
+    display: none;
+  }
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*IMG Gallery*/
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    padding: 0 2px;
+  }
+.respond {
+    float: left;
+    width: 12.5%;
+  }
+ @media only screen and (max-width: 700px) {
+    .respond {
+      width: 25%;
+    }
+  }
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .respond2 {
+    float: left;
+    width: 100%;
+  }
+ @media only screen and (max-width: 700px) {
+    .respond2 {
+      width: 50%;
+    }
+  }

@@ -1,0 +1,144 @@
+   <!-- Header -->
+   <div class="header">
+    <h1>Scavenger Hunt 2</h1>
+    <p>Tamsin Savery & Aidan de Sousa</p>
+  </div>
+
+  <!-- Navigation Bar -->
+  <div class="navi" id="myNavi">
+    <a href="home.html" class="active">Home</a>
+    <a href="puzzles.html">Puzzle Listing</a>
+    <div class="dropdownNavi">
+      <button class="dropbtnNavi">
+        Registration <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdownNavi-content">
+        <a href="registration.html">Registration Overview</a>
+        <a href="teamReg.html">Team Registration</a>
+        <a href="indReg.html">Individual Registration</a>
+      </div>
+    </div>
+    <a href="rules.html">Rules</a>
+    <a href="transport.html">Free Transport</a>
+    <div class="dropdownNavi">
+      <button class="dropbtnNavi">
+        Practice Content <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdownNavi-content">
+        <a href="practice.html">All Available Content</a>
+        <a href="shunt1puzzles.html">SHunt1 Puzzles</a>
+        <a href="https://ozclo.org.au/past-problems/">OzCLO</a>
+      </div>
+    </div>
+    <a href="fame.html">Hall of Fame</a>
+    <a href="javascript:void(0);" class="icon" onclick="navi()">
+        <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <!--IMGs-->
+    <div class="mySlides fade"><img src="assets\Shunt1IMGS\v17.jpg" style="width:100%"></div>
+    <div class="mySlides fade"><img src="assets\Shunt1IMGS\v1.jpg" style="width:100%"></div>
+    <div class="mySlides fade"><img src="assets\Shunt1IMGS\v3.jpg" style="width:100%"></div>
+    <div class="mySlides fade"><img src="assets\Shunt1IMGS\v5.jpg" style="width:100%"></div>
+    <div class="mySlides fade"><img src="assets\Shunt1IMGS\v8.jpg" style="width:100%"></div>
+    <div class="mySlides fade"><img src="assets\Shunt1IMGS\v6.jpg" style="width:100%"></div>
+    <div class="mySlides fade"><img src="assets\Shunt1IMGS\v2.jpg" style="width:100%"></div>
+    <div class="mySlides fade"><img src="assets\Shunt1IMGS\v4.jpg" style="width:100%"></div>
+    <div class="mySlides fade"><img src="assets\Shunt1IMGS\v12.jpg" style="width:100%"></div>
+    <div class="mySlides fade"><img src="assets\Shunt1IMGS\v16.jpg" style="width:100%"></div>
+    <div class="mySlides fade"><img src="assets\Shunt1IMGS\v11.jpg" style="width:100%"></div>
+  </div>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+  <!--Dropdown Menu-->
+  <div class="dropdown bodyClass">
+    <button class="dropbtn bodyClass"><a href="registration.html">Registration Page</a></button>
+    <div class="dropdown-content">  
+      <a href="teamReg.html">Team Registration</a>
+      <a href="indReg.html">Individual Registration</a>
+    </div>
+  </div>
+
+  <!--YouTube-->
+  <iframe src="https://www.youtube.com/embed/tGxAYeeyoIc" height=500px width="100%"></iframe>
+
+  <!--Table-->
+  <table>
+    <tr>
+      <th class="details" colspan="2">Event</th>
+      <th class="time">Time (24 hr)</th>
+      <th class="location">Location</th>
+    </tr>
+    <tr>
+      <td class="event">Arrival Window</td>
+      <td class="details">15 mins to allow for people to arrive and teams to gather</td>
+      <td class="time">10:00 - 10:15</td>
+      <td class="location">Victoria Square</td>
+    </tr>
+    <tr>
+      <td class="event">Briefing</td>
+      <td class="details">From Tamsin regarding the day</td>
+      <td class="time">10:15</td>
+      <td class="location">Victoria Square</td>
+    </tr>
+    <tr>
+      <td class="event">Dispurtion</td>
+      <td class="details">The hunt begins and teams dispurse across the CBD</td>
+      <td class="time">10:20</td>
+      <td class="location">See map below</td>
+    </tr>
+    <tr>
+      <td class="event">Lunch Window</td>
+      <td class="details"></td>
+      <td class="time">12:00 - 13:30</td>
+      <td class="location">Victoria Square</td>
+    </tr>
+    <tr>
+      <td class="event">Awards</td>
+      <td class="details">All teams must be present for awards ceremony</td>
+      <td class="time">16:15 - 16:25</td>
+      <td class="location">Victoria Square</td>
+    </tr>
+    <tr>
+      <td class="event">Pick-Up</td>
+      <td class="details">All present are free to leave</td>
+      <td class="time">16:30</td>
+      <td class="location">Victoria Square</td>
+    </tr>
+  </table>
+
+  <!--List Items-->
+  <ul>
+    <li>
+        The purple house icon at Victoria Square is the rendezvous point.
+        All major events across the day happen here.
+        <b>If at anytime a team is split up or something goes wrong, all team members must report here.</b>
+    </li>
+    <li>
+        The yellow starts represent the four squares and Rundle Mall.
+        Use these as a safe place to rest and stay whilst puzzle solving.
+        These roughly represent the bounding areas of the day.
+    </li>
+    <li>
+        The blue polygon represents the boundaries.
+        <b>All puzzles are within this zone.</b>
+        You may leave the area but there is no need to do as such.
+    </li>
+</ul>
